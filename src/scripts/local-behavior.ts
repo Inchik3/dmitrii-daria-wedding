@@ -13,9 +13,16 @@ function showToast(text) {
 }
 
 function closeEnvelope() {
+  const env = $('#svd-env, .envelope-screen, .landing-envelope, .envelope, .env-screen, .env');
+  if (env?.classList.contains('gone')) return;
   document.body.classList.add('envelope-opened');
-  const env = $('.envelope-screen, .landing-envelope, .envelope, .env-screen, .env');
-  if (env) setTimeout(() => env.classList.add('is-hidden'), 760);
+  document.documentElement.classList.remove('svd-env-open');
+  if (env) {
+    env.classList.add('opened');
+    env.style.pointerEvents = 'none';
+    setTimeout(() => env.classList.add('gone'), 620);
+    setTimeout(() => env.classList.add('is-hidden'), 1050);
+  }
   document.documentElement.style.overflow = '';
   document.body.style.overflow = '';
 }
@@ -129,11 +136,19 @@ async function submitRsvp(form) {
 document.addEventListener('DOMContentLoaded', () => {
   updateTimer();
   setInterval(updateTimer, 1000);
+  const envelope = $('#svd-env');
+  if (envelope) {
+    envelope.addEventListener('pointerup', closeEnvelope, { passive: true });
+    envelope.addEventListener('touchend', closeEnvelope, { passive: true });
+  }
   document.addEventListener('click', (event) => {
-    const target = event.target.closest('button, a, .env-seal, .env-seal-text');
+    const target = event.target.closest('button, a, #svd-env, .env-seal, .env-seal-text');
     if (!target) return;
     const text = (target.textContent || '').trim();
-    if (target.matches('.env-seal, .env-seal-text') || text === '???????') closeEnvelope();
+    if (target.matches('#svd-env, .env-seal, .env-seal-text') || text.toLowerCase() === 'нажмите') {
+      event.preventDefault();
+      closeEnvelope();
+    }
     if (target.matches('button') && text === 'Google') { event.preventDefault(); makeCalendar('google'); }
   });
   const form = $('#rsvpForm');
