@@ -84,6 +84,10 @@ function startMusic() {
 function startSilkBackground() {
   const canvas = $('#silk-canvas');
   if (!canvas) return;
+  if (window.matchMedia('(max-width: 767px), (prefers-reduced-motion: reduce)').matches) {
+    canvas.remove();
+    return;
+  }
   const context = canvas.getContext('2d', { alpha: true });
   if (!context) return;
 
