@@ -1,0 +1,383 @@
+{
+  "assets": [
+    {
+      "contentType": "text/css",
+      "id": "9db96eff2a806d54",
+      "kind": "stylesheet",
+      "name": "style.css",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\9db96eff2a806d54.css",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/css/style.css?v=24"
+    },
+    {
+      "contentType": "text/css",
+      "id": "2f506ba58405d8eb",
+      "kind": "stylesheet",
+      "name": "landing-envelope.css",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\2f506ba58405d8eb.css",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/css/landing-envelope.css?v=21"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "1a44ede94aa450cc",
+      "kind": "image",
+      "name": "main-1784454266.jpg",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\1a44ede94aa450cc.jpg",
+      "url": "https://fd74e8089ad2-svadebno.s3.ru1.storage.beget.cloud/landings/3951/main-1784454266.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "f902b38c0fbe8cac",
+      "kind": "image",
+      "name": "groom-1784448640.jpg",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\f902b38c0fbe8cac.jpg",
+      "url": "https://fd74e8089ad2-svadebno.s3.ru1.storage.beget.cloud/landings/3951/groom-1784448640.jpg"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "62de779a59c1fdd3",
+      "kind": "image",
+      "name": "bride-1784448648.jpg",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\62de779a59c1fdd3.jpg",
+      "url": "https://fd74e8089ad2-svadebno.s3.ru1.storage.beget.cloud/landings/3951/bride-1784448648.jpg"
+    },
+    {
+      "contentType": "text/css",
+      "id": "0d3f54d816506431",
+      "kind": "stylesheet",
+      "name": "shared.css",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\0d3f54d816506431.css",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/shared.css?v=2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "a9e15656bb1d82f6",
+      "kind": "font",
+      "name": "HeatherScriptTwo.woff2",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\a9e15656bb1d82f6.woff2",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/assets/fonts/HeatherScriptTwo.woff2"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "e52842192bcf3080",
+      "kind": "font",
+      "name": "PoiretOne-Regular.woff2",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\e52842192bcf3080.woff2",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/assets/fonts/PoiretOne-Regular.woff2"
+    },
+    {
+      "contentType": "image/x-icon",
+      "id": "35d5d3c0bc54e7a4",
+      "kind": "image",
+      "name": "favicon.ico",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\35d5d3c0bc54e7a4.ico",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/favicon.ico"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d681acd110a7589e",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\d681acd110a7589e",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20496&y=10521&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ed5070fa7d51bd74",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\ed5070fa7d51bd74",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20495&y=10520&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4fab23bb1e6fac5d",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\4fab23bb1e6fac5d",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20495&y=10521&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "797613ed51b1ae3a",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\797613ed51b1ae3a",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20495&y=10522&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "345094987b269d9d",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\345094987b269d9d",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20496&y=10520&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "e89e6e9f26ee282b",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\e89e6e9f26ee282b",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20496&y=10522&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "c95f903bc3d73841",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\c95f903bc3d73841",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20497&y=10520&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4a2800f0880a312c",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\4a2800f0880a312c",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20497&y=10521&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3a985dd42c5c9580",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\3a985dd42c5c9580",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20497&y=10522&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "f5444688e0fe94b4",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\f5444688e0fe94b4",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20494&y=10519&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "a242aead2f2c0181",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\a242aead2f2c0181",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20494&y=10520&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "425a6cbde9e03df8",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\425a6cbde9e03df8",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20494&y=10521&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "58ea6e21fa5553b7",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\58ea6e21fa5553b7",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20494&y=10522&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "d6fc4f5353d096ba",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\d6fc4f5353d096ba",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20495&y=10519&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "4f7f5d455545ac33",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\4f7f5d455545ac33",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20496&y=10519&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "bd965989a1bbc34a",
+      "kind": "image",
+      "name": "tiles",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\bd965989a1bbc34a",
+      "url": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.07.19-0~b:260630145600~ia:26.05.27-0~ib:26.07.19-4&x=20497&y=10519&z=15&scale=1&lang=ru_RU&ads=enabled"
+    },
+    {
+      "contentType": "image/png",
+      "id": "da8b4aa66dc3f595",
+      "kind": "image",
+      "name": "defaultImage.png",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\da8b4aa66dc3f595.png",
+      "url": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/layout/defaultImage.png"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "80499a75669dfd6f",
+      "kind": "image",
+      "name": "svg-1",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\80499a75669dfd6f.svg",
+      "url": "inline-svg:80499a75669dfd6f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "5221228d9a0efb8e",
+      "kind": "image",
+      "name": "svg-2",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\5221228d9a0efb8e.svg",
+      "url": "inline-svg:5221228d9a0efb8e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "fc6761f7642d3d38",
+      "kind": "image",
+      "name": "svg-3",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\fc6761f7642d3d38.svg",
+      "url": "inline-svg:fc6761f7642d3d38"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "afaf2873d6596631",
+      "kind": "image",
+      "name": "svg-4",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\afaf2873d6596631.svg",
+      "url": "inline-svg:afaf2873d6596631"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "134e751b9f76f82f",
+      "kind": "image",
+      "name": "svg-5",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\134e751b9f76f82f.svg",
+      "url": "inline-svg:134e751b9f76f82f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "79a604de668c0653",
+      "kind": "image",
+      "name": "svg-6",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\79a604de668c0653.svg",
+      "url": "inline-svg:79a604de668c0653"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "62f6e12da39a6e7a",
+      "kind": "image",
+      "name": "svg-7",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\62f6e12da39a6e7a.svg",
+      "url": "inline-svg:62f6e12da39a6e7a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "22de553713f6388c",
+      "kind": "image",
+      "name": "svg-8",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\22de553713f6388c.svg",
+      "url": "inline-svg:22de553713f6388c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0a6f0203e553f941",
+      "kind": "image",
+      "name": "svg-9",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\0a6f0203e553f941.svg",
+      "url": "inline-svg:0a6f0203e553f941"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "ff01e972aa3c85c7",
+      "kind": "image",
+      "name": "svg-10",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\ff01e972aa3c85c7.svg",
+      "url": "inline-svg:ff01e972aa3c85c7"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6072c4bb5268aca3",
+      "kind": "image",
+      "name": "svg-11",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\6072c4bb5268aca3.svg",
+      "url": "inline-svg:6072c4bb5268aca3"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6ead6c4afc0695f7",
+      "kind": "image",
+      "name": "svg-12",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\6ead6c4afc0695f7.svg",
+      "url": "inline-svg:6ead6c4afc0695f7"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8d44a4ca1d5e1aca",
+      "kind": "image",
+      "name": "svg-13",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\8d44a4ca1d5e1aca.svg",
+      "url": "inline-svg:8d44a4ca1d5e1aca"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "7bf640c79dfaea40",
+      "kind": "image",
+      "name": "svg-14",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\7bf640c79dfaea40.svg",
+      "url": "inline-svg:7bf640c79dfaea40"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6f01ae0a67e4bae3",
+      "kind": "image",
+      "name": "svg-15",
+      "path": "C:\\Users\\ivanm\\AppData\\Local\\Temp\\browser-use\\assets\\272d3204-4765-4bc7-b580-ffc56fec43fa\\6f01ae0a67e4bae3.svg",
+      "url": "inline-svg:6f01ae0a67e4bae3"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": null,
+      "id": "8bbdd43ccc916698",
+      "name": "hurt_date.svg",
+      "reason": "Asset response type missing is not valid for image",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/assets/images/hurt_date.svg"
+    },
+    {
+      "contentType": null,
+      "id": "0a9feb3cd901cf57",
+      "name": "hurt_black.svg",
+      "reason": "Asset response type missing is not valid for image",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/assets/images/hurt_black.svg"
+    },
+    {
+      "contentType": null,
+      "id": "293605919e06949a",
+      "name": "hurt_blank.svg",
+      "reason": "Asset response type missing is not valid for image",
+      "url": "https://xn--80acbjf3chr.xn--p1ai/themes/vanilla/assets/images/hurt_blank.svg"
+    },
+    {
+      "contentType": "application/octet-stream",
+      "id": "3999d68928ce57ee",
+      "name": "grab.cur",
+      "reason": "Asset response type application/octet-stream is not valid for image",
+      "url": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur"
+    },
+    {
+      "contentType": null,
+      "id": "3e1aece7b3a3edb6",
+      "name": "grabbing.cur",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at IH (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grabbing.cur"
+    },
+    {
+      "contentType": null,
+      "id": "7b22b5d051f170be",
+      "name": "help.cur",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at IH (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/help.cur"
+    },
+    {
+      "contentType": null,
+      "id": "7ccae62e99690152",
+      "name": "zoom_in.cur",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at IH (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/zoom_in.cur"
+    }
+  ]
+}

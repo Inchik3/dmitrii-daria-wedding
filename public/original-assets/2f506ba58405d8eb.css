@@ -1,0 +1,284 @@
+/* Конверт-приглашение с аудио. Цвета приходят через CSS-переменные на #svd-env.
+   ВАЖНО: все внутренние классы с префиксом env- — конверт инжектится в <body> темы,
+   и общие имена (.title/.invite/.seal) пересекаются с классами темы (стили протекают). */
+
+/* Пока виден конверт — страница под ним не скроллится (класс ставит landing-envelope.js) */
+html.svd-env-open, html.svd-env-open body { overflow: hidden; }
+
+#svd-env {
+    position: fixed;
+    inset: 0;
+    /* Выше фоновой анимации темы (напр. #silk-canvas у vanilla = 99999), пока не открыт:
+       иначе до window.load анимация проступает поверх конверта. Конверт живёт до открытия
+       и сразу удаляется, так что быть самым верхним оверлеем — корректно. */
+    z-index: 100000;
+    overflow: hidden;
+    cursor: pointer;
+    /* 3D-сцена для раскрытия створок */
+    perspective: 1500px;
+    perspective-origin: 50% 46%;
+    /* Шрифт текста — как на лендинге (подставляется по теме) */
+    font-family: var(--env-font-body, Georgia, 'Times New Roman', serif);
+    -webkit-tap-highlight-color: transparent;
+    /* Скролл страницы под конвертом запрещён (жесты по оверлею не прокручивают) */
+    touch-action: none;
+    overscroll-behavior: contain;
+    /* Зерно бумаги: мягкое многооктавное зерно без перекрута контраста */
+    --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+/* Тонкая бумажная текстура поверх створок */
+#svd-env::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: .55;
+    background-image:
+        repeating-linear-gradient(45deg, rgba(0,0,0,.02) 0 1px, transparent 1px 24px),
+        repeating-linear-gradient(-45deg, rgba(0,0,0,.02) 0 1px, transparent 1px 24px);
+}
+
+/* Четыре створки конверта (откидываются в 3D вокруг внешних рёбер) */
+#svd-env .env-flap {
+    position: absolute;
+    inset: 0;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transition: transform 1.1s cubic-bezier(.55,.06,.18,1), opacity .7s ease .35s;
+}
+/* Зерно бумаги: повторяющийся тайл шума, вмешанный в заливку створки */
+#svd-env .env-flap {
+    background-size: 300px 300px, 100% 100%;
+    background-blend-mode: overlay;
+}
+#svd-env .env-flap.env-t {
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+    background: var(--paper-noise), linear-gradient(180deg, var(--env-bg1), var(--env-bg2));
+    box-shadow: inset 0 -70px 90px -55px rgba(0,0,0,.22);
+    transform-origin: 50% 0;
+}
+#svd-env .env-flap.env-b {
+    clip-path: polygon(0 100%, 100% 100%, 50% 50%);
+    background: var(--paper-noise), linear-gradient(0deg, var(--env-bg1), var(--env-bg2));
+    box-shadow: inset 0 70px 90px -55px rgba(0,0,0,.16);
+    transform-origin: 50% 100%;
+}
+#svd-env .env-flap.env-l {
+    clip-path: polygon(0 0, 0 100%, 50% 50%);
+    background: var(--paper-noise), linear-gradient(90deg, var(--env-bg2), var(--env-bg1));
+    box-shadow: inset -70px 0 90px -55px rgba(0,0,0,.18);
+    transform-origin: 0 50%;
+}
+#svd-env .env-flap.env-r {
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+    background: var(--paper-noise), linear-gradient(270deg, var(--env-bg2), var(--env-bg1));
+    box-shadow: inset 70px 0 90px -55px rgba(0,0,0,.18);
+    transform-origin: 100% 50%;
+}
+
+/* Линии сгибов по диагоналям */
+#svd-env .env-folds {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity .6s;
+    background:
+        linear-gradient(to bottom right, transparent calc(50% - 1px), rgba(0,0,0,.13) 50%, transparent calc(50% + 1px)),
+        linear-gradient(to bottom left,  transparent calc(50% - 1px), rgba(0,0,0,.13) 50%, transparent calc(50% + 1px));
+}
+/* Мягкая виньетка для глубины */
+#svd-env .env-vign {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity .6s;
+    background: radial-gradient(125% 125% at 50% 44%, transparent 52%, rgba(0,0,0,.07));
+}
+
+/* Текст конверта скрыт, пока не загрузятся шрифты темы (иначе FOUT — надписи скачут).
+   Класс fonts-ready ставит landing-envelope.js по document.fonts.ready (+ фолбэк-таймаут). */
+#svd-env:not(.fonts-ready) .env-title,
+#svd-env:not(.fonts-ready) .env-invite,
+#svd-env:not(.fonts-ready) .env-seal-text {
+    opacity: 0 !important;
+}
+
+/* Заголовок (имена). Привязан НИЗОМ к центру — растёт вверх при переносе,
+   зазор до печати остаётся постоянным. */
+#svd-env .env-title {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: calc(50% + 120px);
+    z-index: 4;
+    text-align: center;
+    color: var(--env-text);
+    padding: 0 28px;
+    margin: 0;
+    transform: none;
+    animation: none;
+    opacity: 1;
+    transition: opacity .5s ease, transform .7s ease;
+}
+#svd-env .env-title .env-t-small {
+    display: block;
+    font-size: clamp(.78rem, 3vw, 1.05rem);
+    letter-spacing: .34em;
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 16px;
+}
+#svd-env .env-title .env-t-names {
+    display: block;
+    /* Имена — заголовочным/рукописным шрифтом темы */
+    font-family: var(--env-font-title, Georgia, serif);
+    font-size: clamp(1.9rem, 8vw, 3.1rem);
+    letter-spacing: .01em;
+    line-height: 1.2;
+}
+
+/* Сургучная печать с оттиском — матовый сургуч, приподнятый бортик, вдавленное поле */
+#svd-env .env-seal {
+    position: absolute;
+    left: 50%; top: 50%;
+    z-index: 5;
+    width: 138px; height: 138px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    /* лёгкая неровность края — органика сургуча */
+    border-radius: 48% 52% 47% 53% / 53% 47% 52% 48%;
+    /* матовая заливка с объёмом: верхний свет → цвет печати → тёмный низ */
+    background: radial-gradient(circle at 50% 40%, var(--env-seal-hi, var(--env-accent-hi)) 0%, var(--env-seal, var(--env-accent)) 56%, var(--env-seal-lo, var(--env-accent-lo)) 100%);
+    box-shadow:
+        0 14px 26px -8px rgba(0,0,0,.42),       /* тень на бумаге */
+        0 4px 9px rgba(0,0,0,.22),
+        inset 0 3px 4px rgba(255,255,255,.26),   /* верхний свет */
+        inset 0 -13px 18px rgba(0,0,0,.28);      /* затемнение снизу (объём) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: svdSealBeat 2.6s ease-in-out infinite;
+}
+/* Приподнятый бортик и вдавленное поле (как от штампа) */
+#svd-env .env-seal::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 4px 8px rgba(0,0,0,.32),         /* поле вдавлено: тень сверху */
+        inset 0 -4px 7px rgba(255,255,255,.16),  /* свет снизу поля */
+        0 1px 0 rgba(255,255,255,.22),           /* блик под бортиком */
+        0 -1px 2px rgba(0,0,0,.2);               /* тень над бортиком */
+    border: 1px solid rgba(0,0,0,.1);
+}
+/* Тиснёный (приподнятый) текст */
+#svd-env .env-seal .env-seal-text {
+    position: relative;
+    z-index: 1;
+    transition: opacity .3s ease;
+    color: var(--env-seal-text, var(--env-accent-lo));
+    font-size: .82rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow:
+        0 -1px 0 rgba(255,255,255,.28),   /* свет сверху — буквы приподняты */
+        0 1px 2px rgba(0,0,0,.42);        /* тень снизу */
+}
+
+/* Подпись под печатью. Привязана ВЕРХОМ к центру — растёт вниз при переносе,
+   зазор до печати такой же, как у имён сверху (симметрия). */
+#svd-env .env-invite {
+    position: absolute;
+    left: 0; right: 0;
+    top: calc(50% + 120px);
+    z-index: 4;
+    text-align: center;
+    color: var(--env-text);
+    padding: 0 28px;
+    margin: 0;
+    width: auto;
+    transform: none;
+    animation: none;
+    clip-path: none;
+    background: none;
+    box-shadow: none;
+    display: block;
+    font-size: clamp(1.1rem, 4.4vw, 1.5rem);
+    letter-spacing: .1em;
+    line-height: 1.35;
+    opacity: .78;
+    transition: opacity .5s ease, transform .6s ease;
+}
+
+@keyframes svdSealBeat {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50%      { transform: translate(-50%, -50%) scale(1.05); }
+}
+
+/* Печать снимается: лёгкий подъём и плавное растворение с мягким наклоном */
+@keyframes svdSealBreak {
+    0%   { transform: translate(-50%, -50%) scale(1)    rotate(0);     opacity: 1; }
+    28%  { transform: translate(-50%, -54%) scale(1.04) rotate(0);     opacity: 1; }
+    100% { transform: translate(-50%, -74%) scale(.82)  rotate(-6deg); opacity: 0; }
+}
+
+/* Раскрытие — печать снимается, затем створки откидываются в 3D со сдвигом */
+#svd-env.opened .env-seal {
+    animation: svdSealBreak .85s cubic-bezier(.38,0,.4,1) forwards;
+}
+#svd-env.opened .env-title  { opacity: 0; transform: translateY(-30px); transition-delay: .1s; }
+#svd-env.opened .env-invite { opacity: 0; transform: translateY(20px);  transition-delay: .1s; }
+#svd-env.opened .env-folds,
+#svd-env.opened .env-vign   { opacity: 0; }
+
+#svd-env.opened .env-flap.env-t { transform: rotateX(-122deg); opacity: 0; transition-delay: .28s, .55s; }
+#svd-env.opened .env-flap.env-l { transform: rotateY(122deg);  opacity: 0; transition-delay: .42s, .7s; }
+#svd-env.opened .env-flap.env-r { transform: rotateY(-122deg); opacity: 0; transition-delay: .42s, .7s; }
+#svd-env.opened .env-flap.env-b { transform: rotateX(122deg);  opacity: 0; transition-delay: .56s, .85s; }
+
+#svd-env.gone { opacity: 0; pointer-events: none; transition: opacity .45s; }
+
+/* Кнопка-колонка снизу справа */
+#svd-speaker {
+    position: fixed;
+    right: 18px; bottom: 18px;
+    z-index: 9990;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: var(--env-accent);
+    color: #fff;
+    border: none;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+}
+#svd-speaker span { position: relative; z-index: 1; display: flex; }
+#svd-speaker svg { width: 24px; height: 24px; display: block; }
+#svd-speaker.playing::after {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.75);
+    transform: translate(-50%, -50%) scale(.35);
+    animation: svdPulse 1.8s ease-out infinite;
+    z-index: 0;
+}
+@keyframes svdPulse {
+    0%   { transform: translate(-50%, -50%) scale(.35); opacity: .75; }
+    100% { transform: translate(-50%, -50%) scale(1);   opacity: 0; }
+}
+#svd-speaker .ic-off { display: none; }
+#svd-speaker.muted { background: #9ca3af; }
+#svd-speaker.muted .ic-on { display: none; }
+#svd-speaker.muted .ic-off { display: block; }

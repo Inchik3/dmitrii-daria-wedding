@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дмитрий и Дарья приглашают Вас на свадьбу</title>
+<link rel="icon" href="original-assets/35d5d3c0bc54e7a4.ico">
+<link rel="stylesheet" href="src/styles/original-local.css">
+</head>
+<body class="animate">
+<div id="svd-env" style="--env-bg1:#fbf5ec;--env-bg2:#f0e1cd;--env-accent:#c89a68;--env-accent-hi:#f8ca98;--env-accent-lo:#8e602e;--env-seal:#c89a68;--env-seal-hi:#f8ca98;--env-seal-lo:#8e602e;--env-seal-text:#ffffff;--env-text:#43372a;--env-font-title:'Heather Script Two', cursive;--env-font-body:'Poiret One', sans-serif" onclick="svdOpenEnvelope()" class="fonts-ready"><div class="env-flap env-t"></div><div class="env-flap env-b"></div><div class="env-flap env-l"></div><div class="env-flap env-r"></div><div class="env-folds"></div><div class="env-vign"></div><div class="env-title"><span class="env-t-names">Дмитрий &amp; Дарья</span></div><div class="env-seal"><span class="env-seal-text">Нажмите</span></div><div class="env-invite">приглашают Вас на свадьбу</div></div><button id="svd-speaker" type="button" style="--env-bg1:#fbf5ec;--env-bg2:#f0e1cd;--env-accent:#c89a68;--env-accent-hi:#f8ca98;--env-accent-lo:#8e602e;--env-seal:#c89a68;--env-seal-hi:#f8ca98;--env-seal-lo:#8e602e;--env-seal-text:#ffffff;--env-text:#43372a;--env-font-title:'Heather Script Two', cursive;--env-font-body:'Poiret One', sans-serif" onclick="svdToggleSpeaker()" aria-label="Звук"><span class="ic-on"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg></span><span class="ic-off"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg></span></button>
+    <canvas id="silk-canvas" width="390" height="844"></canvas>
+
+            <!-- 1. Обложка (Hero) -->
+<section class="section hero" style="background-image2: url('/themes/vanilla/assets/images/hero-bg.jpg');">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                                <h1 class="hero__names">
+                    <span class="hero__names-word">
+                        Дмитрий
+                    </span>
+                    <span class="hero__names-word2">&amp; Дарья</span>
+                </h1>
+                <div class="hero__date">
+                                            28.08.2026                                    </div>
+
+                            </div>
+        </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint__label">Листайте</span>
+        <svg class="scroll-hint__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+    </div>
+</section>
+
+    <div class="all_page">
+            <!-- 2. Ключевая информация + таймер -->
+<section class="section key-info">
+    <div class="container">
+        <div class="glass">
+            <div class="key-info__details key-info__details--style-2">
+                <div class="key-info__item">
+                    <span class="key-info__label">Дата</span>
+                    <span class="key-info__value">28.08.2026</span>
+                </div>
+
+                <div class="key-info__item">
+                    <span class="key-info__label">Время</span>
+                    <span class="key-info__value">13:00</span>
+                </div>
+
+                <div class="key-info__item">
+                    <span class="key-info__label">Место</span>
+                    <span class="key-info__value">г. Саранск, ул Коммунистическая, 61</span>
+                </div>
+            </div>
+
+                            <div class="timer_title h2">До торжества осталось</div>
+                <div class="timer" id="timer">
+                    <div class="timer__block">
+                        <span class="timer__number" id="days">38</span>
+                        <span class="timer__label">Дней</span>
+                    </div>
+                    <div class="timer__block">
+                        <span class="timer__number" id="hours">23</span>
+                        <span class="timer__label">Часов</span>
+                    </div>
+                    <div class="timer__block">
+                        <span class="timer__number" id="minutes">19</span>
+                        <span class="timer__label">Минут</span>
+                    </div>
+                    <div class="timer__block">
+                        <span class="timer__number" id="seconds">11</span>
+                        <span class="timer__label">Секунд</span>
+                    </div>
+                </div>
+
+            <div class="key-info__buttons">
+                                    <a href="#rsvp" class="btn btn--primary">Я приду</a>
+                                                    <a href="#location" class="btn btn--outline">Маршрут</a>
+                            </div>
+
+        </div>
+    </div>
+</section>
+
+            <!-- 3. Текст-приглашение -->
+<section class="section invitation-text">
+    <div class="container">
+                    <h2 class="section__title">Дорогие гости!</h2>
+
+                    <div class="invitation-text__content">
+                Мы будем рады разделить с вами этот особенный день. Ваша поддержка и любовь значат для нас очень много.<br>
+Приглашаем вас присоединиться к нашему празднику любви, радости и счастья.            </div>
+            </div>
+</section>
+
+            <!-- 4. Фото-блок -->
+<section class="section photo-block">
+    <div class="container">
+        <div class="photo-block__grid">
+                            <div class="photo-block__main">
+                    <img src="original-assets/1a44ede94aa450cc.jpg" alt="Фото пары" class="photo-block__img photo-block__img--large">
+                </div>
+
+                            <div class="photo-block__small-group">
+                                            <div class="photo-block__wrapper">
+                            <img src="original-assets/f902b38c0fbe8cac.jpg" alt="Дмитрий" class="photo-block__img">
+                            <span class="photo-block__label">Дмитрий</span>
+                        </div>
+
+                                            <div class="photo-block__wrapper">
+                            <img src="original-assets/62de779a59c1fdd3.jpg" alt="Дарья" class="photo-block__img">
+                            <span class="photo-block__label">Дарья</span>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</section>
+
+            <!-- 5. Календарь события -->
+<section class="section calendar">
+    <div class="container">
+        <div class="glass">
+            <h2 class="section__title">
+                    Август 2026                </h2>
+                <div class="calendar__wrapper">
+                    <div class="calendar__dates-row">
+                        <div class="calendar__date-item">26</div><div class="calendar__date-item">27</div><div class="calendar__date-item is-event"><span>28</span></div><div class="calendar__date-item">29</div><div class="calendar__date-item">30</div>                    </div>
+                </div>
+
+
+
+            <!-- 6. Программа дня (тайминг) -->
+                    <div class="timeline__list">
+                                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <div class="timeline__desc">Регистрация: г. Саранск, ул Коммунистическая, 61</div>
+                            <div class="timeline__time">13:00</div>
+                        </div>
+                    </div>
+                                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <div class="timeline__desc">Банкет: г. Саранск, ул Строительная, 15</div>
+                            <div class="timeline__time">16:00</div>
+                        </div>
+                    </div>
+                            </div>
+                            <div class="calendar__actions calendar__actions--single">
+                <a class="btn btn--small btn--outline" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0&dates=20260828T140000/20260828T200000&details&location" target="_blank" rel="noopener">Google</a>
+            </div>
+                </div>
+    </div>
+</section>
+
+            <!-- 7. Дресс-код -->
+<section class="section dresscode">
+    <div class="container">
+        <h2 class="section__title">Дресс-код</h2>
+
+                    <p class="dresscode__desc">Нам будет особенно приятно видеть Вас в нарядах:  <br>
+   - Девушки: нежной цветовой гаммы.       <br>
+     Будем признательны если в белом будет только невеста.<br>
+   - Мужчины: классический образ.</p>
+
+                    <div class="dresscode__palette">
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#f2ddc6"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#fddde6"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#e6e6fa"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#ddeeff"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#dfeed4"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#fefcdd"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#fff994"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#eaf28f"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#a7c6ff"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#d9c9fe"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#ffc0cb"></path>
+                    </svg>
+                                    <svg width="77" height="75" viewBox="0 0 77 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70.8167 6.60222C68.9417 4.50913 66.7156 2.84873 64.2654 1.7159C61.8152 0.583071 59.189 0 56.5368 0C53.8846 0 51.2584 0.583071 48.8082 1.7159C46.3581 2.84873 44.1319 4.50913 42.257 6.60222L38.3658 10.9441L34.4746 6.60222C30.6874 2.37629 25.5508 0.00219045 20.1948 0.00219049C14.8388 0.00219054 9.70216 2.37629 5.91491 6.60222C2.12766 10.8282 3.99052e-08 16.5597 0 22.5361C-3.99052e-08 28.5125 2.12766 34.2441 5.91491 38.47L9.80608 42.8119L38.3658 74.6796L66.9255 42.8119L70.8167 38.47C72.6925 36.3779 74.1805 33.8939 75.1958 31.1599C76.211 28.4259 76.7335 25.4955 76.7335 22.5361C76.7335 19.5767 76.211 16.6463 75.1958 13.9123C74.1805 11.1783 72.6925 8.69434 70.8167 6.60222Z" fill="#bc987e"></path>
+                    </svg>
+                            </div>
+
+                    <p class="dresscode__note">Можно выбрать любой из этих оттенков.</p>
+            </div>
+</section>
+
+
+            <!-- 9. Опрос (RSVP) -->
+<section class="section rsvp" id="rsvp">
+    <div class="container">
+        <h2 class="section__title">Опросник</h2>
+
+                    <p class="rsvp__intro">Пожалуйста, заполните форму, чтобы мы могли учесть все детали и сделать праздник комфортным для вас.</p>
+
+        <form class="rsvp__form" id="rsvpForm" novalidate="novalidate">
+            <!-- Фиксированные обязательные вопросы -->
+            <div class="form-group">
+                <label class="form-label">Имя и фамилия <span class="required">*</span></label>
+                <input type="text" name="guest_name" autocomplete="off" class="form-input" placeholder="Иван Иванов" required="">
+            </div>
+
+                        <div class="form-group">
+                <label class="form-label">Номер телефона <span class="required">*</span></label>
+                <input type="tel" name="guest_phone" autocomplete="off" class="form-input" placeholder="+7 (900) 123-45-67" required="">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Подтверждение участия <span class="required">*</span></label>
+                <div class="form-radio-group">
+                    <label class="form-radio">
+                        <input type="radio" name="guest_attendance" value="yes" required="">
+                        <span class="radio-mark"></span>
+                        <span class="radio-text">Приду</span>
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="guest_attendance" value="no">
+                        <span class="radio-mark"></span>
+                        <span class="radio-text">Не смогу прийти</span>
+                    </label>
+                </div>
+            </div>
+
+
+                                <div class="form-group" data-rsvp-drinks>
+                        <label class="form-label">Что вы будете пить?</label>
+
+                                                    <div class="form-checkbox-group">
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Шампанское">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Шампанское</span>
+                                    </label>
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Вино белое">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Вино белое</span>
+                                    </label>
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Вино красное">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Вино красное</span>
+                                    </label>
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Водка">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Водка</span>
+                                    </label>
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Горячительный напиток ручной работы">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Горячительный напиток ручной работы</span>
+                                    </label>
+                                                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="answer_3014[]" value="Без алкоголя">
+                                        <span class="checkbox-mark"></span>
+                                        <span class="checkbox-text">Без алкоголя</span>
+                                    </label>
+
+                                                            </div>
+                                            </div>
+                                <div class="form-group">
+                        <label class="form-label">Ко скольки мы будем Вас ждать?</label>
+
+                                                    <div class="form-radio-group">
+                                                                    <label class="form-radio">
+                                        <input type="radio" name="answer_3016" value="Приду на регистрацию к 12:45">
+                                        <span class="radio-mark"></span>
+                                        <span class="radio-text">Приду на регистрацию к 12:45</span>
+                                    </label>
+                                                                    <label class="form-radio">
+                                        <input type="radio" name="answer_3016" value="Подойду к банкету к 15:45">
+                                        <span class="radio-mark"></span>
+                                        <span class="radio-text">Подойду к банкету к 15:45</span>
+                                    </label>
+
+                                                            </div>
+
+                                            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Отправить ответ</button>
+            <p class="rsvp__consent">Нажимая «Отправить», вы соглашаетесь с передачей ваших ответов организаторам свадьбы и обработкой персональных данных согласно <a href="/legal/privacy" target="_blank">Политике конфиденциальности</a>.</p>
+        </form>
+
+        <div id="rsvpSuccess" class="rsvp__success" style="display: none;">
+            <h2 class="rsvp__success-title">Ваша анкета сохранена!</h2>
+            <p class="rsvp__success-text">Вы можете изменить свой ответ, заполнив форму заново в любой момент.</p>
+            <button class="btn btn--outline" onclick="resetRsvp()">Заполнить заново</button>
+        </div>
+    </div>
+</section>
+
+            <!-- 10. Карта и адрес -->
+<section class="section location" id="location">
+    <div class="container">
+        <div class="glass">
+
+                            <h2 class="section__title">Место проведения</h2>
+
+            <div class="location__map" id="map">
+                <iframe
+                    title="Rose Park на Яндекс Картах"
+                    src="https://yandex.ru/map-widget/v1/?ll=45.155012%2C54.205595&mode=search&oid=51715144214&ol=biz&z=17"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+                            <div class="location__address">
+                    Регистрация: г. Саранск, ул<br>
+Коммунистическая, 61<br>
+Банкет: г. Саранск, ул<br>
+Строительная, 15                </div>
+
+                        <a href="https://yandex.ru/maps/org/rose_park/51715144214/?ll=45.155012%2C54.205595&z=17" target="_blank" class="btn btn--outline" id="routeBtn">Открыть маршрут</a>
+        </div>
+    </div>
+</section>
+
+            <!-- 11. Финальный блок -->
+<section class="section final-block">
+    <div class="container">
+
+                    <div class="final-block__text">Наше счастье станет полным только в окружении самых родных людей. <br>
+     До встречи на свадьбе!</div>
+
+                <div class="h1 final-block__names">
+            Дмитрий            <span>
+                            &amp;
+                        Дарья            </span>
+        </div>
+
+
+    </div>
+</section>
+
+    </div>
+
+    <!-- Yandex Maps API — загружаем только если секция карты включена -->
+
+
+
+
+
+<div id="cookie-banner-invite" class="cookie-banner cookie-banner--invite" role="region" aria-label="Уведомление об использовании cookie">
+    <div class="cookie-banner__inner">
+        <p class="cookie-banner__text">
+            Эта страница использует cookie для сохранения вашего ответа. Данные из формы передаются организаторам свадьбы.
+            <a href="/legal/privacy#guests">Подробнее</a>
+        </p>
+        <button id="cookie-banner-invite-accept" class="cookie-banner__btn" type="button">Понятно</button>
+    </div>
+</div>
+
+<!-- Yandex.Metrika counter -->
+
+<noscript><div><img src="https://mc.yandex.ru/watch/107192230" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<script type="module" src="src/data/original-content.js"></script>
+<script type="module" src="src/scripts/local-behavior.js"></script>
+</body>
+</html>

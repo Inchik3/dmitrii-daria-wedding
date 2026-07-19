@@ -1,0 +1,282 @@
+# Original Styles
+
+Computed values by viewport were extracted with browser automation.
+
+## 320x800
+- Scroll height: 5009px
+- section hero: top 0px, left 0px, size 320x800px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1030px, left 20px, size 280x64px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1231px, left 0px, size 320x242px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1503px, left 0px, size 320x653px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 2176px, left 0px, size 320x431px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 2637px, left 0px, size 320x324px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 2991px, left 0px, size 320x992px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 4013px, left 0px, size 320x602px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 244px, size 264x36px, font 30.4px/36.48px
+  - Нажмите: top 388px, size 79x24px, font 13.12px/24px
+  - приглашают Вас на свадьбу: top 520px, size 320x24px, font 17.6px/23.76px
+  - Дмитрий: top 218px, size 232x72px, font 80px/72px
+  - & Дарья: top 290px, size 232x72px, font 80px/72px
+  - Листайте: top 626px, size 82x24px, font 12px/24px
+  - Дата: top 685px, size 102x60px, font 34px/60px
+  - 28.08.2026: top 747px, size 102x21px, font 18px/18px
+  - Время: top 685px, size 100x60px, font 34px/60px
+  - 13:00: top 747px, size 50x21px, font 18px/18px
+  - Место: top 784px, size 260x60px, font 34px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 846px, size 170x45px, font 18px/18px
+  - До торжества осталось: top 922px, size 280x88px, font 44px/44px
+  - 38: top 1030px, size 70x40px, font 40px/40px
+  - Дней: top 1070px, size 70x24px, font 18px/24px
+  - 23: top 1030px, size 70x40px, font 40px/40px
+  - Часов: top 1070px, size 70x24px, font 18px/24px
+  - 26: top 1030px, size 70x40px, font 40px/40px
+  - Минут: top 1070px, size 70x24px, font 18px/24px
+  - 28: top 1030px, size 70x40px, font 40px/40px
+
+## 360x800
+- Scroll height: 5012px
+- section hero: top 0px, left 0px, size 360x800px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 962px, left 20px, size 320x64px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1163px, left 0px, size 360x242px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1435px, left 0px, size 360x742px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 2197px, left 0px, size 360x431px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 2658px, left 0px, size 360x324px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 3012px, left 0px, size 360x974px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 4016px, left 0px, size 360x602px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 244px, size 304x36px, font 30.4px/36.48px
+  - Нажмите: top 388px, size 79x24px, font 13.12px/24px
+  - приглашают Вас на свадьбу: top 520px, size 360x24px, font 17.6px/23.76px
+  - Дмитрий: top 218px, size 232x72px, font 80px/72px
+  - & Дарья: top 290px, size 232x72px, font 80px/72px
+  - Листайте: top 626px, size 82x24px, font 12px/24px
+  - Дата: top 685px, size 102x60px, font 34px/60px
+  - 28.08.2026: top 747px, size 102x21px, font 18px/18px
+  - Время: top 685px, size 100x60px, font 34px/60px
+  - 13:00: top 747px, size 50x21px, font 18px/18px
+  - Место: top 784px, size 287x60px, font 34px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 846px, size 287x21px, font 18px/18px
+  - До торжества осталось: top 898px, size 320x44px, font 44px/44px
+  - 38: top 962px, size 80x40px, font 40px/40px
+  - Дней: top 1002px, size 80x24px, font 18px/24px
+  - 23: top 962px, size 80x40px, font 40px/40px
+  - Часов: top 1002px, size 80x24px, font 18px/24px
+  - 26: top 962px, size 80x40px, font 40px/40px
+  - Минут: top 1002px, size 80x24px, font 18px/24px
+  - 27: top 962px, size 80x40px, font 40px/40px
+
+## 375x812
+- Scroll height: 5009px
+- section hero: top 0px, left 0px, size 375x812px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 974px, left 20px, size 335x64px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1175px, left 0px, size 375x218px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1423px, left 0px, size 375x775px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 2218px, left 0px, size 375x431px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 2679px, left 0px, size 375x324px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 3033px, left 0px, size 375x950px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 4013px, left 0px, size 375x602px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 250px, size 319x36px, font 30.4px/36.48px
+  - Нажмите: top 394px, size 79x24px, font 13.12px/24px
+  - приглашают Вас на свадьбу: top 526px, size 375x24px, font 17.6px/23.76px
+  - Дмитрий: top 224px, size 232x72px, font 80px/72px
+  - & Дарья: top 296px, size 232x72px, font 80px/72px
+  - Листайте: top 638px, size 82x24px, font 12px/24px
+  - Дата: top 697px, size 102x60px, font 34px/60px
+  - 28.08.2026: top 759px, size 102x21px, font 18px/18px
+  - Время: top 697px, size 100x60px, font 34px/60px
+  - 13:00: top 759px, size 50x21px, font 18px/18px
+  - Место: top 796px, size 287x60px, font 34px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 858px, size 287x21px, font 18px/18px
+  - До торжества осталось: top 910px, size 335x44px, font 44px/44px
+  - 38: top 974px, size 84x40px, font 40px/40px
+  - Дней: top 1014px, size 84x24px, font 18px/24px
+  - 23: top 974px, size 84x40px, font 40px/40px
+  - Часов: top 1014px, size 84x24px, font 18px/24px
+  - 26: top 974px, size 84x40px, font 40px/40px
+  - Минут: top 1014px, size 84x24px, font 18px/24px
+  - 27: top 974px, size 84x40px, font 40px/40px
+
+## 390x844
+- Scroll height: 5075px
+- section hero: top 0px, left 0px, size 390x844px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1006px, left 20px, size 350x64px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1207px, left 0px, size 390x218px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1455px, left 0px, size 390x809px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 2284px, left 0px, size 390x431px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 2745px, left 0px, size 390x324px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 3099px, left 0px, size 390x950px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 4079px, left 0px, size 390x602px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 265px, size 334x37px, font 31.2px/37.44px
+  - Нажмите: top 410px, size 79x24px, font 13.12px/24px
+  - приглашают Вас на свадьбу: top 542px, size 390x24px, font 17.6px/23.76px
+  - Дмитрий: top 240px, size 232x72px, font 80px/72px
+  - & Дарья: top 312px, size 232x72px, font 80px/72px
+  - Листайте: top 670px, size 82x24px, font 12px/24px
+  - Дата: top 729px, size 102x60px, font 34px/60px
+  - 28.08.2026: top 791px, size 102x21px, font 18px/18px
+  - Время: top 729px, size 100x60px, font 34px/60px
+  - 13:00: top 791px, size 50x21px, font 18px/18px
+  - Место: top 828px, size 287x60px, font 34px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 890px, size 287x21px, font 18px/18px
+  - До торжества осталось: top 942px, size 350x44px, font 44px/44px
+  - 38: top 1006px, size 88x40px, font 40px/40px
+  - Дней: top 1046px, size 88x24px, font 18px/24px
+  - 23: top 1006px, size 88x40px, font 40px/40px
+  - Часов: top 1046px, size 88x24px, font 18px/24px
+  - 26: top 1006px, size 88x40px, font 40px/40px
+  - Минут: top 1046px, size 88x24px, font 18px/24px
+  - 26: top 1006px, size 88x40px, font 40px/40px
+
+## 430x932
+- Scroll height: 5198px
+- section hero: top 0px, left 0px, size 430x932px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1094px, left 20px, size 390x64px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1295px, left 0px, size 430x194px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1519px, left 0px, size 430x898px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 2437px, left 0px, size 430x431px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 2898px, left 0px, size 430x324px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 3252px, left 0px, size 430x950px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 4232px, left 0px, size 430x602px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 305px, size 374x41px, font 34.4px/41.28px
+  - Нажмите: top 454px, size 79x24px, font 13.12px/24px
+  - приглашают Вас на свадьбу: top 586px, size 430x26px, font 18.92px/25.542px
+  - Дмитрий: top 284px, size 232x72px, font 80px/72px
+  - & Дарья: top 356px, size 232x72px, font 80px/72px
+  - Листайте: top 758px, size 82x24px, font 12px/24px
+  - Дата: top 817px, size 102x60px, font 34px/60px
+  - 28.08.2026: top 879px, size 102x21px, font 18px/18px
+  - Время: top 817px, size 100x60px, font 34px/60px
+  - 13:00: top 879px, size 50x21px, font 18px/18px
+  - Место: top 916px, size 287x60px, font 34px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 978px, size 287x21px, font 18px/18px
+  - До торжества осталось: top 1030px, size 390x44px, font 44px/44px
+  - 38: top 1094px, size 98x40px, font 40px/40px
+  - Дней: top 1134px, size 98x24px, font 18px/24px
+  - 23: top 1094px, size 98x40px, font 40px/40px
+  - Часов: top 1134px, size 98x24px, font 18px/24px
+  - 26: top 1094px, size 98x40px, font 40px/40px
+  - Минут: top 1134px, size 98x24px, font 18px/24px
+  - 25: top 1094px, size 98x40px, font 40px/40px
+
+## 768x1024
+- Scroll height: 7250px
+- section hero: top 0px, left 0px, size 768x1024px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1271px, left 89px, size 590x104px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1532px, left 0px, size 768x398px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1960px, left 0px, size 768x1344px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 3324px, left 0px, size 768x579px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 3933px, left 0px, size 768x487px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 4450px, left 0px, size 768x1310px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 5810px, left 0px, size 768x770px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 333px, size 712x60px, font 49.6px/59.52px
+  - Нажмите: top 487px, size 79x49px, font 13.12px/49px
+  - приглашают Вас на свадьбу: top 632px, size 768x32px, font 24px/32.4px
+  - Дмитрий: top 248px, size 444x132px, font 147px/132.3px
+  - & Дарья: top 381px, size 444x132px, font 147px/132.3px
+  - Листайте: top 850px, size 82x49px, font 12px/49px
+  - Дата: top 909px, size 170x60px, font 60px/60px
+  - 28.08.2026: top 978px, size 170x35px, font 30px/30px
+  - Время: top 909px, size 131x60px, font 60px/60px
+  - 13:00: top 978px, size 83x35px, font 30px/30px
+  - Место: top 1048px, size 478x60px, font 60px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 1117px, size 478x35px, font 30px/30px
+  - До торжества осталось: top 1187px, size 590x64px, font 64px/64px
+  - 38: top 1271px, size 110x55px, font 55px/55px
+  - Дней: top 1326px, size 110x49px, font 22px/49px
+  - 23: top 1271px, size 110x55px, font 55px/55px
+  - Часов: top 1326px, size 110x49px, font 22px/49px
+  - 26: top 1271px, size 110x55px, font 55px/55px
+  - Минут: top 1326px, size 110x49px, font 22px/49px
+  - 23: top 1271px, size 110x55px, font 55px/55px
+
+## 1024x768
+- Scroll height: 6994px
+- section hero: top 0px, left 0px, size 1024x768px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1015px, left 217px, size 590x104px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1276px, left 0px, size 1024x398px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1704px, left 0px, size 1024x1344px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 3068px, left 0px, size 1024x579px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 3677px, left 0px, size 1024x487px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 4194px, left 0px, size 1024x1310px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 5554px, left 0px, size 1024x770px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 205px, size 968x60px, font 49.6px/59.52px
+  - Нажмите: top 359px, size 79x49px, font 13.12px/49px
+  - приглашают Вас на свадьбу: top 504px, size 1024x32px, font 24px/32.4px
+  - Дмитрий: top 120px, size 444x132px, font 147px/132.3px
+  - & Дарья: top 253px, size 444x132px, font 147px/132.3px
+  - Листайте: top 594px, size 82x49px, font 12px/49px
+  - Дата: top 653px, size 170x60px, font 60px/60px
+  - 28.08.2026: top 722px, size 170x35px, font 30px/30px
+  - Время: top 653px, size 131x60px, font 60px/60px
+  - 13:00: top 722px, size 83x35px, font 30px/30px
+  - Место: top 792px, size 478x60px, font 60px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 861px, size 478x35px, font 30px/30px
+  - До торжества осталось: top 931px, size 590x64px, font 64px/64px
+  - 38: top 1015px, size 110x55px, font 55px/55px
+  - Дней: top 1070px, size 110x49px, font 22px/49px
+  - 23: top 1015px, size 110x55px, font 55px/55px
+  - Часов: top 1070px, size 110x49px, font 22px/49px
+  - 26: top 1015px, size 110x55px, font 55px/55px
+  - Минут: top 1070px, size 110x49px, font 22px/49px
+  - 21: top 1015px, size 110x55px, font 55px/55px
+
+## 1440x1000
+- Scroll height: 7226px
+- section hero: top 0px, left 0px, size 1440x1000px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1247px, left 425px, size 590x104px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1508px, left 0px, size 1440x398px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 1936px, left 0px, size 1440x1344px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 3300px, left 0px, size 1440x579px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 3909px, left 0px, size 1440x487px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 4426px, left 0px, size 1440x1310px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 5786px, left 0px, size 1440x770px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 321px, size 1384x60px, font 49.6px/59.52px
+  - Нажмите: top 475px, size 79x49px, font 13.12px/49px
+  - приглашают Вас на свадьбу: top 620px, size 1440x32px, font 24px/32.4px
+  - Дмитрий: top 236px, size 444x132px, font 147px/132.3px
+  - & Дарья: top 369px, size 444x132px, font 147px/132.3px
+  - Листайте: top 826px, size 82x49px, font 12px/49px
+  - Дата: top 885px, size 170x60px, font 60px/60px
+  - 28.08.2026: top 954px, size 170x35px, font 30px/30px
+  - Время: top 885px, size 131x60px, font 60px/60px
+  - 13:00: top 954px, size 83x35px, font 30px/30px
+  - Место: top 1024px, size 478x60px, font 60px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 1093px, size 478x35px, font 30px/30px
+  - До торжества осталось: top 1163px, size 590x64px, font 64px/64px
+  - 38: top 1247px, size 110x55px, font 55px/55px
+  - Дней: top 1302px, size 110x49px, font 22px/49px
+  - 23: top 1247px, size 110x55px, font 55px/55px
+  - Часов: top 1302px, size 110x49px, font 22px/49px
+  - 26: top 1247px, size 110x55px, font 55px/55px
+  - Минут: top 1302px, size 110x49px, font 22px/49px
+  - 21: top 1247px, size 110x55px, font 55px/55px
+
+## 1920x1080
+- Scroll height: 7306px
+- section hero: top 0px, left 0px, size 1920x1080px, background rgba(0, 0, 0, 0), bg-image none
+- timer: top 1327px, left 665px, size 590x104px, background rgba(0, 0, 0, 0), bg-image none
+- section invitation-text: top 1588px, left 0px, size 1920x398px, background rgba(0, 0, 0, 0), bg-image none
+- section photo-block: top 2016px, left 0px, size 1920x1344px, background rgba(0, 0, 0, 0), bg-image none
+- section calendar: top 3380px, left 0px, size 1920x579px, background rgba(0, 0, 0, 0), bg-image none
+- section dresscode: top 3989px, left 0px, size 1920x487px, background rgba(0, 0, 0, 0), bg-image none
+- section rsvp: top 4506px, left 0px, size 1920x1310px, background rgba(0, 0, 0, 0), bg-image none
+- section location: top 5866px, left 0px, size 1920x770px, background rgba(0, 0, 0, 0), bg-image none
+  - Дмитрий & Дарья: top 361px, size 1864x60px, font 49.6px/59.52px
+  - Нажмите: top 515px, size 79x49px, font 13.12px/49px
+  - приглашают Вас на свадьбу: top 660px, size 1920x32px, font 24px/32.4px
+  - Дмитрий: top 276px, size 444x132px, font 147px/132.3px
+  - & Дарья: top 409px, size 444x132px, font 147px/132.3px
+  - Листайте: top 906px, size 82x49px, font 12px/49px
+  - Дата: top 965px, size 170x60px, font 60px/60px
+  - 28.08.2026: top 1034px, size 170x35px, font 30px/30px
+  - Время: top 965px, size 131x60px, font 60px/60px
+  - 13:00: top 1034px, size 83x35px, font 30px/30px
+  - Место: top 1104px, size 478x60px, font 60px/60px
+  - г. Саранск, ул Коммунистическая, 61: top 1173px, size 478x35px, font 30px/30px
+  - До торжества осталось: top 1243px, size 590x64px, font 64px/64px
+  - 38: top 1327px, size 110x55px, font 55px/55px
+  - Дней: top 1382px, size 110x49px, font 22px/49px
+  - 23: top 1327px, size 110x55px, font 55px/55px
+  - Часов: top 1382px, size 110x49px, font 22px/49px
+  - 26: top 1327px, size 110x55px, font 55px/55px
+  - Минут: top 1382px, size 110x49px, font 22px/49px
+  - 19: top 1327px, size 110x55px, font 55px/55px
