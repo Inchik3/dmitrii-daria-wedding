@@ -1,5 +1,3 @@
-import { originalContent } from '../data/original-content.js';
-
 const $ = (selector, root = document) => root.querySelector(selector);
 
 function showToast(text) {
@@ -163,5 +161,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookieBtn = $('.cookie-banner__btn');
   if (localStorage.getItem('cookie-ok') === '1' && cookie) cookie.classList.add('is-hidden');
   if (cookieBtn) cookieBtn.addEventListener('click', () => { localStorage.setItem('cookie-ok','1'); if(cookie) cookie.classList.add('is-hidden'); });
-  window.__originalContent = originalContent;
 });
