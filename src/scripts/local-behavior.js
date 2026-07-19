@@ -20,8 +20,9 @@ function closeEnvelope() {
   document.documentElement.classList.remove('svd-env-open');
   if (env) {
     env.classList.add('opened');
-    setTimeout(() => env.classList.add('gone'), 1250);
-    setTimeout(() => env.classList.add('is-hidden'), 1750);
+    env.style.pointerEvents = 'none';
+    setTimeout(() => env.classList.add('gone'), 620);
+    setTimeout(() => env.classList.add('is-hidden'), 1050);
   }
   document.documentElement.style.overflow = '';
   document.body.style.overflow = '';
@@ -284,6 +285,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const speaker = $('#svd-speaker');
   if (speaker) {
     speaker.classList.add('muted');
+  }
+  const envelope = $('#svd-env');
+  if (envelope) {
+    envelope.addEventListener('pointerup', closeEnvelope, { passive: true });
+    envelope.addEventListener('touchend', closeEnvelope, { passive: true });
   }
   document.addEventListener('click', (event) => {
     const target = event.target.closest('button, a, #svd-env, .env-seal, .env-seal-text');
