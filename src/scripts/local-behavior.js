@@ -1,5 +1,3 @@
-import { originalContent } from '../data/original-content.js';
-
 const $ = (selector, root = document) => root.querySelector(selector);
 let weddingAudio;
 
@@ -60,7 +58,7 @@ function setupMusic() {
     document.body.appendChild(weddingAudio);
   }
   weddingAudio.loop = true;
-  weddingAudio.preload = 'auto';
+  weddingAudio.preload = window.matchMedia('(max-width: 767px)').matches ? 'none' : 'metadata';
   weddingAudio.volume = 0.72;
   window.__weddingAudio = weddingAudio;
 }
@@ -317,5 +315,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookieBtn = $('.cookie-banner__btn');
   if (localStorage.getItem('cookie-ok') === '1' && cookie) cookie.classList.add('is-hidden');
   if (cookieBtn) cookieBtn.addEventListener('click', () => { localStorage.setItem('cookie-ok','1'); if(cookie) cookie.classList.add('is-hidden'); });
-  window.__originalContent = originalContent;
 });
