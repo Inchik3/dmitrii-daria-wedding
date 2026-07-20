@@ -21,7 +21,7 @@ if (missing.length) {
   process.exit(1);
 }
 
-const requiredControls = ['Я приду', 'Маршрут', 'Отправить ответ', 'Открыть маршрут'];
+const requiredControls = ['Я приду', 'Маршрут', 'Отправить ответ', 'Открыть регистрацию', 'Открыть банкет'];
 const absentControls = requiredControls.filter((text) => !html.includes(text) && !content.includes(text));
 if (absentControls.length) {
   console.error(`Missing controls: ${absentControls.join(', ')}`);

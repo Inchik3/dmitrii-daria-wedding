@@ -319,27 +319,46 @@
 
                             <h2 class="section__title">Место проведения</h2>
 
-            <div class="location__map" id="map">
-                <iframe
-                    title="Rose Park на Яндекс Картах"
-                    src="https://yandex.ru/map-widget/v1/?ll=45.155012%2C54.205595&mode=search&oid=51715144214&ol=biz&z=17"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen>
-                </iframe>
-                <a class="location__map-mobile" href="https://yandex.ru/maps/org/rose_park/51715144214/?ll=45.155012%2C54.205595&z=17" target="_blank" rel="noopener">
-                    <span>Rose Park</span>
-                    <small>Открыть на Яндекс Картах</small>
-                </a>
+            <div class="location__maps" id="map">
+                <div class="location__map-card">
+                    <h3 class="location__map-title">Регистрация</h3>
+                    <div class="location__map">
+                        <iframe
+                            title="Регистрация на Яндекс Картах"
+                            src="https://yandex.ru/map-widget/v1/?ll=45.179833%2C54.185199&mode=whatshere&whatshere%5Bpoint%5D=45.179833%2C54.185199&whatshere%5Bzoom%5D=17&z=17"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                        <a class="location__map-mobile" href="https://yandex.ru/maps/42/saransk/house/kommunisticheskaya_ulitsa_61/YEwYdwBpQUYEQFtufX15dH1qbQ==/?ll=45.179833%2C54.185199&z=17" target="_blank" rel="noopener">
+                            <span>Коммунистическая, 61</span>
+                            <small>Открыть на Яндекс Картах</small>
+                        </a>
+                    </div>
+                    <p class="location__map-address">г. Саранск, ул. Коммунистическая, 61</p>
+                </div>
+
+                <div class="location__map-card">
+                    <h3 class="location__map-title">Банкет</h3>
+                    <div class="location__map">
+                        <iframe
+                            title="Банкет на Яндекс Картах"
+                            src="https://yandex.ru/map-widget/v1/?ll=45.155012%2C54.205595&mode=search&oid=51715144214&ol=biz&z=17"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                        <a class="location__map-mobile" href="https://yandex.ru/maps/org/rose_park/51715144214/?ll=45.155012%2C54.205595&z=17" target="_blank" rel="noopener">
+                            <span>Rose Park</span>
+                            <small>Открыть на Яндекс Картах</small>
+                        </a>
+                    </div>
+                    <p class="location__map-address">г. Саранск, ул. Строительная, 15</p>
+                </div>
             </div>
 
-                            <div class="location__address">
-                    Регистрация: г. Саранск, ул<br>
-Коммунистическая, 61<br>
-Банкет: г. Саранск, ул<br>
-Строительная, 15                </div>
-
-                        <a href="https://yandex.ru/maps/org/rose_park/51715144214/?ll=45.155012%2C54.205595&z=17" target="_blank" class="btn btn--outline" id="routeBtn">Открыть маршрут</a>
+                        <a href="https://yandex.ru/maps/42/saransk/house/kommunisticheskaya_ulitsa_61/YEwYdwBpQUYEQFtufX15dH1qbQ==/?ll=45.179833%2C54.185199&z=17" target="_blank" class="btn btn--outline" id="routeBtn">Открыть регистрацию</a>
+                        <a href="https://yandex.ru/maps/org/rose_park/51715144214/?ll=45.155012%2C54.205595&z=17" target="_blank" class="btn btn--outline">Открыть банкет</a>
         </div>
     </div>
 </section>

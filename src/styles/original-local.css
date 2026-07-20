@@ -1297,8 +1297,26 @@ form .btn--full{
 .location .glass{
     padding: 30px;
 }
+.location__maps{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+.location__map-card{
+    min-width: 0;
+}
+.location__map-title{
+    font-size: 44px;
+    line-height: 46px;
+    margin-bottom: 14px;
+}
+.location__map-address{
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 22px;
+}
 .location__map{
-    height: 400px;
+    height: 330px;
     width: 100%;
     border-radius: 28px;
     overflow: hidden;
@@ -1343,7 +1361,9 @@ form .btn--full{
     line-height: 26px;
 }
 .location .btn{
-    margin: 0 auto;
+    display: inline-flex;
+    margin-left: 6px;
+    margin-right: 6px;
     max-width: 250px;
     margin-top: 30px;
 }
@@ -1408,6 +1428,19 @@ form .btn--full{
         background: rgba(255, 252, 242, 0.78);
         box-shadow: none;
     }
+    .location__maps{
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .location__map-title{
+        font-size: 38px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .location__map-address{
+        font-size: 18px;
+        line-height: 22px;
+    }
     .location__map{
         height: 220px;
         background:
@@ -1443,12 +1476,19 @@ form .btn--full{
         transform: rotate(-45deg);
     }
     .location__map-mobile span{
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 26px;
+        line-height: 30px;
+        max-width: 260px;
     }
     .location__map-mobile small{
         font-size: 18px;
         line-height: 22px;
+    }
+    .location .btn{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18px;
     }
     body{
         font-size: 20px;
