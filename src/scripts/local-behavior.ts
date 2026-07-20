@@ -26,7 +26,7 @@ function closeEnvelope() {
 }
 
 function updateTimer() {
-  const target = new Date('2026-08-28T13:00:00+03:00').getTime();
+  const target = new Date('2026-08-28T15:00:00+03:00').getTime();
   const diff = Math.max(0, target - Date.now());
   const days = Math.floor(diff / 86400000);
   const hours = Math.floor(diff / 3600000) % 24;
@@ -37,7 +37,7 @@ function updateTimer() {
 }
 
 function makeCalendar(type) {
-  const google = 'https://calendar.google.com/calendar/u/0/r/eventedit?text=%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0&dates=20260828T140000/20260828T200000&details&location';
+  const google = 'https://calendar.google.com/calendar/u/0/r/eventedit?text=%D0%A1%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D1%8F%20%D0%B8%20%D0%94%D0%B0%D1%80%D1%8C%D0%B8&dates=20260828T150000/20260828T210000&details=Rose%20Park%2C%20%D0%B3.%20%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C%2015&location=Rose%20Park%2C%20%D0%B3.%20%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C%2015&ctz=Europe%2FMoscow';
   if (type === 'google') window.open(google, '_blank', 'noopener');
 }
 
@@ -67,8 +67,7 @@ function collectRsvpData(form) {
     guest_name: (data.get('guest_name') || '').toString().trim(),
     guest_phone: (data.get('guest_phone') || '').toString().trim(),
     guest_attendance: textForChecked(form, 'guest_attendance'),
-    drinks: valuesForChecked(form, 'answer_3014[]').join(', '),
-    arrival_time: textForChecked(form, 'answer_3016')
+    drinks: valuesForChecked(form, 'answer_3014[]').join(', ')
   };
 }
 

@@ -5,8 +5,7 @@ const HEADERS = [
   'Имя и фамилия',
   'Телефон',
   'Участие',
-  'Напитки',
-  'Время прибытия'
+  'Напитки'
 ];
 
 function doPost(event) {
@@ -17,8 +16,7 @@ function doPost(event) {
     payload.guest_name || '',
     payload.guest_phone || '',
     payload.guest_attendance || '',
-    payload.drinks || '',
-    payload.arrival_time || ''
+    payload.drinks || ''
   ]);
 
   return ContentService

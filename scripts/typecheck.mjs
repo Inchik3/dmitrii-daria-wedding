@@ -9,5 +9,6 @@ for (const [name, text] of [['index.html', html], ['original-local.css', css], [
 }
 if (!html.includes('src/scripts/local-behavior.js')) throw new Error('runtime script is not linked');
 if (!css.includes('Heather Script Two') || !css.includes('Poiret One')) throw new Error('font faces are missing');
-if (!data.includes('Дмитрий') || !data.includes('Дарья')) throw new Error('original content text is missing');
+if (!html.includes('Дмитрий') || !html.includes('Дарья')) throw new Error('wedding names are missing');
+if (!data.includes('originalContent')) throw new Error('original content export is missing');
 console.log('typecheck ok');

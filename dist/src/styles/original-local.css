@@ -1302,6 +1302,10 @@ form .btn--full{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px;
 }
+.location__maps--single{
+    grid-template-columns: minmax(0, 540px);
+    justify-content: center;
+}
 .location__map-card{
     min-width: 0;
 }
