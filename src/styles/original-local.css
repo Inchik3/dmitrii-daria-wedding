@@ -1057,6 +1057,30 @@ body.animate .section.key-info{
     padding-left: calc(50% + 36px);
     text-align: left;
 }
+.timeline__list--single{
+    margin-top: 30px;
+}
+.timeline__list--single .timeline__item{
+    display: block;
+    height: auto;
+    padding: 0;
+    text-align: center;
+}
+.timeline__list--single .timeline__item:before,
+.timeline__list--single .timeline__item:after{
+    display: none;
+}
+.timeline__list--single .timeline__content{
+    flex: none;
+    width: 100%;
+}
+.timeline__list--single .timeline__desc{
+    max-width: 360px;
+    margin: 0 auto 8px;
+}
+.timeline__list--single .timeline__time{
+    margin-top: 4px;
+}
 .dresscode{
     margin-top: 30px;
     text-align: center;
@@ -1325,7 +1349,11 @@ form .btn--full{
     justify-content: center;
     text-align: center;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+    min-height: 52px;
+    height: auto;
+    line-height: 1.2;
+    padding: 0 20px;
     margin: 18px auto 0;
 }
 .location__map{
@@ -1341,6 +1369,44 @@ form .btn--full{
     height: 100%;
     border: 0;
     display: block;
+}
+.location__map--link{
+    background:
+        linear-gradient(135deg, rgba(223, 238, 220, 0.96), rgba(237, 243, 247, 0.98)),
+        repeating-linear-gradient(0deg, rgba(255,255,255,.38) 0 1px, transparent 1px 36px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.38) 0 1px, transparent 1px 36px);
+}
+.location__map--link:before,
+.location__map--link:after{
+    display: none;
+}
+.location__map-link{
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 28px;
+    color: #1A1A1A;
+    text-decoration: none;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+}
+.location__map-link:before{
+    content: '';
+    width: 54px;
+    height: 66px;
+    background: #df856f;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+.location__map-link small{
+    font-size: 26px;
+    line-height: 1.2;
 }
 .location__map-mobile{
     display: none;
@@ -1462,6 +1528,14 @@ form .btn--full{
     .location__map:before,
     .location__map:after{
         display: none;
+    }
+    .location__map-link{
+        display: flex;
+        font-size: 30px;
+        padding: 22px;
+    }
+    .location__map-link small{
+        font-size: 24px;
     }
     .location__map-mobile{
         position: absolute;
