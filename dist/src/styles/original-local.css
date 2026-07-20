@@ -1315,6 +1315,15 @@ form .btn--full{
     font-size: 18px;
     line-height: 22px;
 }
+.location__map-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 18px auto 0;
+}
 .location__map{
     height: 330px;
     width: 100%;
@@ -1361,11 +1370,8 @@ form .btn--full{
     line-height: 26px;
 }
 .location .btn{
-    display: inline-flex;
-    margin-left: 6px;
-    margin-right: 6px;
-    max-width: 250px;
-    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
 }
 .final-block{
     margin-top: 35px;
@@ -1488,7 +1494,6 @@ form .btn--full{
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 18px;
     }
     body{
         font-size: 20px;
